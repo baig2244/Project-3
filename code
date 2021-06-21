@@ -1,0 +1,43 @@
+function setup() {
+	createCanvas(windowWidth, windowHeight);
+	background(250);
+	frameRate(60);
+	
+	//Name
+	frameRate(40)
+	fill(random(250,0));
+  textSize(50);
+  textAlign(RIGHT, BOTTOM); 
+  text("Humza Baig", windowWidth/7, windowHeight);
+
+}
+
+function draw() {
+	
+	if(mouseIsPressed){
+		i = int(random(80));
+		ellipse(mouseX, mouseY, i, i);
+		rect(mouseX/2, mouseY/2, i, i)
+	}
+	
+	//rng for colors
+	r = int(random(250));
+	g = int(random(250));
+	b = int(random(250));
+
+	fill(r,g,b);
+	stroke(r,g,b);
+	strokeWeight(random(10))
+	
+	// key pressed command
+	if(keyIsPressed){
+	frameRate(20);
+	j = int(random(250));
+	u = int(random(250));
+	q = int(random(250));
+	
+		background(j,u,q);
+	}
+	
+	
+}
